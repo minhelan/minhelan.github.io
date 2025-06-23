@@ -1,29 +1,20 @@
 nav ul li {
-  float:left;  
+  float:right;  
   list-style:none;
   position:relative;
   display: block;
   border: 1px solid grey; 
-  width: 100px;
+  width: 115px;
   list-style-type: none;
   padding: 15px;
   margin-top: 0;
   margin-left: 10px;
   background-color: #80ae6a;   
+  }
+
+nav ul li a {
   text-align:center;
   color:#ffffff;
   text-decoration:none;
-  font-size:large;
-  }
-li> ul {
-display: none;
-}
-li:hover ul {
-display: block;
-position: absolute;
-}
-
-li:hover ul li a:link{display: block;margin-left:-30px;}
-
-nav ul li a {display:block; padding:10px;}
-nav ul li ul {display:block; position:absolute;}
+  font-size:large;}
+nav ul li ul {display:none; position:absolute;}
