@@ -1,9 +1,10 @@
 ul li {
 display: inline-block;
-border: 3px dotted #dddddd; 
+border: 3px solid grey; 
 width: 150px;
 list-style-type: none;
 padding: 15px;
 margin-top: 0;
 margin-left: 10px;
-background-color: #003964; }
+font:#ffffff;
+background-color: #80ae6a; }
