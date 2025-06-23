@@ -9,12 +9,13 @@ nav ul li {
   padding: 15px;
   margin-top: 0;
   margin-left: 10px;
-  background-color: #80ae6a;   
+  background-color: #80ae6a;
+  text-align: center;   
   }
-
 nav ul li a {
-  text-align:center;
   color:#ffffff;
   text-decoration:none;
   font-size:large;}
-nav ul li ul {display:none; position:absolute;}
+nav ul li ul {color: #ffffff;}
+nav ul li ul {display:none;}
+nav ul li:hover ul {display:block;}
