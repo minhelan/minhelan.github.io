@@ -7,20 +7,26 @@ nav ul li {
   border: 1px solid grey; 
   width: 115px;
   list-style-type: none;
-  padding: 15px;
-  margin-top: 0;
-  margin-left: 10px;
-  background-color: #80ae6a;
+  padding: 15px 7px;
+  margin: 15px 7px 15px 7px;
+    background-color: #80ae6a;
   text-align: center;
   }
-
 
 nav ul li ul {
   display:none;
   position: absolute;
-  color: #ffffff;
-  padding:5px;
-  border: radius 5px;}
+  color:#ffffff;
+  margin: 15px 0px 0px 0px
+  padding: 0px;}
+
+nav ul li ul li {
+  display:none;
+  position: absolute;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px 8px;
+  right: 10px;}
 
 nav ul li:hover ul {display:block;}
   
