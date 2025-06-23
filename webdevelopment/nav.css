@@ -1,12 +1,16 @@
 ul li {
- display: inline-block;
-border: 1px solid grey; 
-width: auto;
-list-style-type: none;
-padding: 15px;
-margin-top: 0;
-margin-left: 10px;
-color:#ffffff;
-background-color: #80ae6a;
-text-align:center;
-font-weight:bold;}
+  display: inline-block;
+  border: 1px solid grey; 
+  width: 100px;
+  list-style-type: none;
+  padding: 15px;
+  margin-top: 0;
+  margin-left: 10px;
+  background-color: #80ae6a; 
+}
+.nav {
+  color:#ffffff;
+  text-decoration:none;
+  font-size:large;
+  text-align:center;
+}
