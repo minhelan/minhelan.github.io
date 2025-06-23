@@ -13,20 +13,24 @@ nav ul li {
   text-align: center;
   }
 
+
 nav ul li ul {
   display:none;
   position: absolute;
-  color:#ffffff;
-  margin: 15px 0px 0px 0px
-  padding: 0px;}
+  color: #ffffff;
+  padding:5px;
+  border-radius: 5px;
+margin: auto ;
+padding: 0%;}
 
 nav ul li ul li {
   display:none;
   position: absolute;
+  color: #ffffff;
+  padding:5px;
   border-radius: 5px;
-  margin: 2px;
-  padding: 10px 8px;
-  right: 10px;}
+margin: auto ;
+padding: 0%;}
 
 nav ul li:hover ul {display:block;}
   
