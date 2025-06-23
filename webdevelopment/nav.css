@@ -6,11 +6,11 @@ ul li {
   padding: 15px;
   margin-top: 0;
   margin-left: 10px;
-  background-color: #80ae6a; 
+  background-color: #80ae6a;   text-align:center;
 }
 .nav {
   color:#ffffff;
   text-decoration:none;
   font-size:large;
-  text-align:center;
+
 }
