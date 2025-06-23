@@ -4,14 +4,14 @@ nav ul li {
   float:left;  
   list-style:none;
   position:relative;
-/*  border: 1px solid grey; 
+  border: 1px solid grey; 
   width: 115px;
   list-style-type: none;
   padding: 15px;
   margin-top: 0;
   margin-left: 10px;
   background-color: #80ae6a;
-  text-align: center;   */
+  text-align: center;
   }
 nav ul li a {
   color:#ffffff;
