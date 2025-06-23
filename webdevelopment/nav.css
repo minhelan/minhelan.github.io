@@ -13,11 +13,7 @@ nav ul li {
   background-color: #80ae6a;
   text-align: center;
   }
-nav ul li a {
-  color:#ffffff;
-  text-decoration:none;
-  font-size:large;
-  display:block;}
+
 
 nav ul li ul {
   display:none;
