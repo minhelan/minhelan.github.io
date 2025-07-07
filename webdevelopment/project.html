@@ -6,6 +6,7 @@
             Developed: June 23, 2025
             -->
                <meta charset="utf-8">
+                          <meta name="viewport" content="width=device-width, initial-scale=1">
                <title>Projects</title>
         <style>
                
@@ -13,13 +14,22 @@
                <link rel="stylesheet" href="nav.css">
                <link rel="stylesheet" href="style.css">
 </head>
-<body><span style="margin-left:30px"><h1>Minh Elan&nbsp;&nbsp;<span style="font-size:medium" "font-style:italic" "font-weight:normal">MLIS, 2025</span></span></h1>
-<nav>
-<ul>
+<body><h1>Minh Elan&nbsp;&nbsp;<span style="font-size:medium;font-style:italic;font-weight:normal;">MLIS, 2025</span></h1>
+<nav><label id="hamburger">NAVIGATION</label>
+
+    <ul class="flex-container">
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
-               <li><a href="reflection.html">REFLECTION</a></li>
-        <li><a href="#contact.html">CONTACT</a></li>
+       <li id="proj" class="active"><a href="project.html">PROJECTS</a>
+                <ul id="mobileHide">
+                     <li>Link 1</li>
+                     <li>Link 2</li>
+                     <li>Link 3</li>
+              </ul>
+        </li>
+    
+       <li><a href="reflection.html">REFLECTION</a></li>
+       <li><a href="#contact.html">CONTACT</a></li>
     </ul>
 </nav> 
 <header> <h1>Projects</h1></header>
