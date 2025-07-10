@@ -1,3 +1,7 @@
+@font-face { 
+font-family: Raleway;
+src: url("Raleway-VariableFont_wght.ttf"); /*remember this is how we link to files in CSS!*/
+}
 h1 {color:#003964;font-family:Georgia, 'Times New Roman', Times, serif;margin:25px 0px 10px 25px;}
 h2 {font-family:Georgia, 'Times New Roman', Times, serif;margin:12px;font-size:30px;}
 body {background-color: #ffffff;
@@ -12,11 +16,6 @@ main {
   margin:0px 50px 5px 50px;
   }
 header {margin:5px 50px 0px 50px;}
-
-@font-face { 
-font-family: Raleway; /*this is where we give our font a name so we can use it!*/
-src: url("webdevelopment/Raleway/Raleway-VariableFont_wght.ttf"); /*remember this is how we link to files in CSS!*/
-}
 
 blockquote {font-family: Raleway; }
 
