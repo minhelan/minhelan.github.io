@@ -13,7 +13,12 @@ main {
   }
 header {margin:5px 50px 0px 50px;}
 
+@font-face { 
+font-family: Raleway; /*this is where we give our font a name so we can use it!*/
+src: url("webdevelopment/Raleway/Raleway-VariableFont_wght.ttf"); /*remember this is how we link to files in CSS!*/
+}
 
+blockquote {font-family: Raleway; }
 
 .wrapper {
   display:grid;
