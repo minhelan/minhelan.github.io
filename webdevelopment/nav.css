@@ -9,6 +9,7 @@ display: none;
 li#proj:hover {max-height:20px;}
 nav ul {display:flex;}
 
+
 nav ul li {
   float:left;  
   list-style:none;
