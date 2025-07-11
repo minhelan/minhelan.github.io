@@ -1,23 +1,28 @@
 @font-face { 
 font-family: Raleway;
-src: url("Raleway-VariableFont_wght.ttf"); /*remember this is how we link to files in CSS!*/
+src: url("Raleway-VariableFont_wght.ttf");
 }
 h1 {color:#003964;font-family:Georgia, 'Times New Roman', Times, serif;margin:25px 0px 10px 25px;}
-h2 {font-family:Georgia, 'Times New Roman', Times, serif;margin:12px;font-size:30px;}
+h2 {font-family:Raleway;margin:12px;font-size:30px;}
+h3 {font-family:Raleway;}
 body {background-color: #ffffff;
 font: #000000; font-family:Arial, Helvetica, sans-serif;padding:0px;} 
-footer {background-color:#f1f1f1;
+footer {
  margin-top:auto;
     width: 100%;
   text-align: center;
-height:40px;
-padding-top:5px;}
+padding-top:25px;
+background-image:url("images/footer.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  height:50px;
+}
 main {
   margin:0px 50px 5px 50px;
   }
 header {margin:5px 50px 0px 50px;}
-
-blockquote {font-family: Raleway; }
 
 .wrapper {
   display:grid;
@@ -76,4 +81,29 @@ text-align:center;}
 grid-row:5;
 text-align:center;}
   header {margin:20px 50px 0px 50px;}
+  img {min-width:200px;max-width:50%;}
+}
+
+/*print settings*/
+@media print {
+  header, nav, img, a#resume {
+    display: none;
+  }
+     body, footer {
+      font-family: Georgia, serif;
+       font-size: 12pt;
+       line-height: 24pt; background: none;
+       width: 100%;
+       border: none;
+       padding: 0;
+       margin: 0;
+       color: #000;
+     }
+     h1,h2,h3 {color:black;}
+   @page {margin:1in;}
+   main {margin:0px;}
+    .wrapper {    
+  display:block;
+  }
+.box {padding:0px;margin:0px;}
 }
