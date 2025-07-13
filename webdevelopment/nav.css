@@ -1,53 +1,24 @@
 .flex-container{display:flex;}
 nav {width:100%;}
 nav ul {margin:0px 5px 0px 0px;}
-.active {letter-spacing: 1px; background-color:gray;
-}
 #hamburger {
 display: none;
-}
-li#proj:hover {max-height:20px;}
+ }
 nav ul {display:flex;}
-
-
-nav ul li {
-  float:left;  
-  list-style:none;
- position:relative;
-  border: 1px solid grey; 
-  width: 115px;
-  list-style-type: none;
-  padding: 15px 7px;
-  margin: 15px 7px 15px 7px;
-  background-color: #80ae6a;
-  text-align: center;
-  }
-
 nav ul li a {
   color:#ffffff;
   text-decoration:none;
   font-size:medium; 
   display:flex;}
-
 nav ul li ul {
   display:none;
-/* position:absolute;*/
   color:#ffffff;
-  margin: 18px 0px 0px 0px;
+  margin: 0px;
   padding: 0px;}
-
-nav ul li ul li {
-  border-radius: 5px;
-  margin: 2px;
-  padding: 10px 8px;
-  right: 10px;}
-
 nav ul li:hover ul {display:flex;flex-direction:column;}
-  
 nav ul li ul li:hover {
   color: #ffffff;
   background-color: gray;}
-
 nav ul {
 list-style-type: none;
 margin: 0;
@@ -58,16 +29,9 @@ text-decoration: none;
 display: flex;
 margin: 2px;
 }
-/*format all navigation <a> elements*/
-
-nav a:hover, nav a:focus {
-background-color: navy;
-}
-
 /*position sub-menu or drop-down*/
 nav ul>li ul {
 position: absolute;
-top: 100%;
 display: none;
 }
 nav ul ul li {
@@ -78,21 +42,61 @@ nav>ul>li:hover>ul{
 display: block;
 }
 
+
+
+/*desktop*/
 @media only screen and (min-width: 951px) {
-  nav {min-height: 60px;border-bottom: 2px solid green;margin-bottom:25px;}
-.flex-container{flex-direction:row;flex-wrap:nowrap;float:right;width:100%;}
+  nav {min-height: 60px;margin-bottom:25px;}
+.flex-container{flex-direction:row;flex-wrap:nowrap;justify-content:right;width:100%;border-bottom: 2px solid green;}
+nav ul li {
+  float:left;  
+  list-style:none;
+ position:relative;
+  width: fit-content;
+  list-style-type: none;
+  padding: 12px 7px;
+  margin: 12px 20px 0px 20px;
+  font-family:Raleway;
+  font-weight:bold;
+   letter-spacing:2px;
+    }
+  nav ul li a {
+  font-size:large; justify-content:center;color:black;}
+  .active {letter-spacing: 1px; text-decoration:underline;font-weight:bolder;
+}
+nav a:hover, nav a:focus {
+background-color: navy;
+color:white;
+border-radius:1px;
+}
+nav ul li ul li {
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px 10px;
+border:1px solid #f6f6f6;
+background-color:#f3f3f3;min-width:100px;}
 }
 
-@media only screen and (min-width: 641px) and (max-width: 950px) {
-.flex-container{flex-direction:row;flex-wrap:wrap;float:inline-start;margin-top:5px;margin-bottom:10px;}
-}
+
+
+@media only screen and (min-width: 769px) and (max-width: 950px) {
+.flex-container{flex-direction:row;flex-wrap:nowrap;margin-top:5px;margin-bottom:10px;justify-content:center;border-bottom:green solid 2px;}
 nav {height:auto;}
 nav ul li {
- 
+  width: -webkit-fill-available;
  position:relative;
    padding: 10px 4px;
   margin: 5px;
-
+  float:left;  
+  list-style:none;
+ position:relative;
+  border: 1px solid grey; 
+  width: 115px;
+  list-style-type: none;
+  background-color: #80ae6a;
+    font-family:Raleway;
+  font-weight:bold;
+   letter-spacing:2px;
   }
   li#proj:hover #mobileHide {
 display: flex;margin:auto;
@@ -101,18 +105,64 @@ nav ul li ul li {
     border-radius: 0px;
     margin: 3px 0px 0px 0px;
     padding: 5px;
-    right: 6px;
+}
+nav ul li a {justify-content:center;}
+.active {letter-spacing: 1px; background-color:gray;
+}
+nav a:hover, nav a:focus {
+background-color: navy;
+color:white;
+border-radius:1px;
+}
+}
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+.flex-container{flex-direction:row;flex-wrap:nowrap;margin-top:5px;margin-bottom:10px;justify-content:center;}
+nav {height:auto;}
+nav ul li {
+ position:relative;
+   padding: 10px 4px;
+  margin: 5px;
+  float:none;  
+  list-style:none;
+  border: 1px solid grey; 
+  width: -webkit-fill-available;
+  list-style-type: none;
+   background-color: #80ae6a;
+     font-family:Raleway;
+  font-weight:bold;
+   letter-spacing:2px;
+    }
+  li#proj:hover #mobileHide {
+display: flex;margin:auto;
+  }
+nav ul li ul li {
+    border-radius: 0px;
+    margin: 3px 0px 0px 0px;
+    padding: 5px;
+    width:100px;
+     }
+  nav ul li a {font-size:small;font-weight:bold;justify-content:center;}
+  .active {letter-spacing: 1px; background-color:gray;
+}
+nav a:hover, nav a:focus {
+background-color: navy;
+color:white;
+border-radius:1px;
+}
 }
 
 
 
 @media only screen and (max-width: 640px) {
 .flex-container {flex-direction:column;width:80%;margin-bottom:20px;}
-nav:hover  #mobileHide {display: none;}
-nav:active #mobileHide {display: none;}
-li {display:none;}
+nav:hover #mobileHide {display: none;}
+nav:focus #mobileHide {display: none;}
+nav ul li {display:none;}
 nav:hover li {display:flex;width:100%;margin:2px 13px 2px 13px;}
- nav:active li {display:flex;width:100%;margin:2px 13px 2px 13px;}
+ nav:focus li {display:flex;width:100%;margin:2px 13px 2px 13px;}
 #hamburger {
 display: block;
 float: none;
@@ -120,15 +170,27 @@ font-size: 20px;
 background-color:#003964;
 color:white;
 padding:5px;
+ letter-spacing:5px;
+ font-family:Raleway;
+ font-weight:bold;
+ text-align:center;
+
 }
-li#proj:hover {margin-bottom:115px;}
+li#proj:hover {margin-bottom:143px;}
 li#proj:hover #mobileHide {
-display: flex;width:50%;margin:auto;padding:5px;
+display: flex;width:50%;margin-top:32px;padding:5px;
+}
+ li#proj:focus #mobileHide {
+display: flex;width:50%;margin-top:32px;padding:5px;
 }
 nav ul li ul li {height:20px;}
+nav ul li ul li {
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px 8px;
+  right: 10px;}
   
-  
-nav {width:100%;height:auto;border-bottom:none}
+nav {height:auto;}
 nav ul li {
   position:relative;
   border: 1px solid grey; 
@@ -136,7 +198,16 @@ nav ul li {
   padding: 10px 5px;
   margin: 5px;
   background-color: #80ae6a;
-  text-align: center;
+    font-family:Raleway;
+  font-weight:bold;
+  letter-spacing:2px;
   }
 nav ul {display:flex;flex-direction:column;}
+.active {letter-spacing: 1px; background-color:gray;
+}
+nav a:hover, nav a:focus {
+background-color: navy;
+color:white;
+border-radius:1px;
+}
 }
