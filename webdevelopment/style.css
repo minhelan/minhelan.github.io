@@ -209,6 +209,8 @@ textarea#message {width:95%;height:60px;margin-top:5px;}
 input#submit {margin: 10px 0px;}
 
 form {min-width:200px;}
+
+.projback {border-bottom:2px dashed black;margin-bottom:20px;}
 }
 
 /*print settings*/
