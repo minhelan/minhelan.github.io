@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+                <!-- Contact Page for Portfolio
+            School/Term:  University of Missouri ISLT 7355 Summer 2025
+            Developed: July 17, 2025
+            -->
+               <meta charset="utf-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                           <link rel="shortcut icon" type="images/x-icon" href="images/favicon.ico">  <title>Contact</title>
+        <style>
+        </style>
+               <link rel="stylesheet" href="nav.css">
+               <link rel="stylesheet" href="style.css">
+</head>
+<body><h1>Minh Elan</h1>
+<nav>
+<label id="hamburger">&#9776; NAVIGATION</label>
+
+    <ul class="flex-container">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">ABOUT</a></li>
+       <li id="proj"><a href="project.html">PROJECTS</a>
+                <ul id="mobileHide">
+                     <li><a href="project.html#project1">Project 1</a>
+                    <li><a href="project.html#project2">Project 2</a>
+                    <li><a href="project.html#project3">Project 3</a>
+              </ul>
+        </li>
+    
+       <li><a href="reflection.html">REFLECTION</a></li>
+       <li class="active"><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+</nav> 
+<header> <h1>Contact Page</h1></header>
+<main>
+        <form action="mailto:megrd@missouri.edu?Subject=Profile%20Contact" method="post" enctype="text/plain" id="emailform"><label for="emailform"><strong><span style="font-size:20px">Email Form</span></strong></label><br><br>Complete this form to send me an email. <em>All fields are required.</em><br><br>
+    <label for="name"><strong>Name</strong><br>
+<input type="text" id="fname" name="fname" placeholder="First Name" autofocus required tabindex="1">&nbsp;
+<input type="text" id="lname" name="lname" placeholder="Last Name" required tabindex="2"></label><br><br>
+<label for="email"><strong>Email</strong></label><br>
+<input type="email" id="email" name="email" placeholder="name@email.com" required tabindex="3"><br><br>
+<label for="message"><strong>Message</strong></label><br>
+<textarea tabindex="4" id="message" name="message" placeholder="Message" required></textarea><br>
+
+<input type="submit" tabindex="5" value="Send">
+</form>
+
+</main>
+<footer>Copyright 2025, Minh Elan. All rights reserved. &nbsp;<a href="mailto:megrd@umsystem.edu" class="icon"><img src="images/envelope.png" height="18" alt="email" class="enlarge"></a> megrd@umsystem.edu &nbsp;<a href="tel:+18888888888" class="icon"><img src="images/call.png" height="18" alt="phone" class="enlarge"></a> +1-888-888-8888</footer>
+</body>
+</html>
